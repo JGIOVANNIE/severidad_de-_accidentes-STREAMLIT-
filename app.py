@@ -98,7 +98,7 @@ def main():
 
 a,b,c = st.columns([0.2,0.6,0.2])
 with b:
-  st.image("accidente.jpeg", use_column_width=False)
+  st.image("accidente.jpeg", use_column_width=True)
 
 page_bg_img = '''
 <style>
@@ -125,7 +125,7 @@ st.text("""La característica objetivo es Accident_severity, que es una variable
         La métrica para la evaluación será el f1-score.
 """)
 
-st.markdown("Please find GitHub repository link of project: [Click He.re](https://github.com/JGIOVANNIE/Road-Traffic-Severity-Classification-Project)") 
+st.markdown("Encuentra mi repositorio en: [Click He.re](https://github.com/JGIOVANNIE/Road-Traffic-Severity-Classification-Project)") 
 
 st.markdown("Siguiendo los pasos del perfil de [avikumart](https://www.kaggle.com/avikumart), se logro este proyecto con éxito") 
 

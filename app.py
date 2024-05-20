@@ -91,7 +91,7 @@ def main():
               else:
                      st.write(f"The severity prediction is slight injury")
                
-              st.write("Developed By: Joshua Esquivel")
+              st.write("Elaborado por: Joshua Esquivel")
               st.markdown("""Reach out to me on: |
               [Linkedin](www.linkedin.com/in/jgiovannie) |
               [GitHub](https://github.com/JGIOVANNIE) 
@@ -104,12 +104,14 @@ with b:
 
 # Descripcion del proyecto y del codigo             
 st.subheader("🧾🧾Descripción:🧾🧾")
-st.markdown("<p style='text-align: center; font-weight: italic; font-size: 12px;'> Este conjunto de datos se recopiló de los departamentos de policía de la Sub-ciudad de Addis Abeba para un trabajo de investigación de maestría. El conjunto de datos se ha preparado a partir de registros manuales de accidentes de tráfico del año 2017-20. Toda la información sensible se ha excluido durante la codificación de datos y finalmente tiene 32 características y 12316 instancias del accidente. Luego se preprocesa y se identifican las principales causas del accidente analizándolo utilizando diferentes algoritmos de clasificación de aprendizaje automático.</p> ")
+st.markdown("<p style='text-align: center; font-weight: italic; font-size: 12px;'> Este conjunto de datos se recopiló de los departamentos de policía de la Sub-ciudad de Addis Abeba para un trabajo de investigación de maestría. El conjunto de datos se ha preparado a partir de registros manuales de accidentes de tráfico del año 2017-20. Toda la información sensible se ha excluido durante la codificación de datos y finalmente tiene 32 características y 12316 instancias del accidente. Luego se preprocesa y se identifican las principales causas del accidente analizándolo utilizando diferentes algoritmos de clasificación de aprendizaje automático.</p> ",
+             unsafe_allow_html=True)
 
 st.markdown("Fuente del dataset: [Click Here](https://www.narcis.nl/dataset/RecordID/oai%3Aeasy.dans.knaw.nl%3Aeasy-dataset%3A191591)")
 
 st.subheader("🧭 Problema :🧭")
-st.markdown("<p style='text-align: center; font-weight: italic; font-size: 12px;'> La característica objetivo es Accident_severity, que es una variable multiclase. La tarea es clasificar esta variable en base a las otras 31 características paso a paso, realizando cada tarea diaria. La métrica para la evaluación será el f1-score.</p> ")
+st.markdown("<p style='text-align: center; font-weight: italic; font-size: 12px;'> La característica objetivo es Accident_severity, que es una variable multiclase. La tarea es clasificar esta variable en base a las otras 31 características paso a paso, realizando cada tarea diaria. La métrica para la evaluación será el f1-score.</p> ",
+              unsafe_allow_html=True)
 
 st.markdown("Encuentra mi repositorio en: [Click Here](https://github.com/JGIOVANNIE/severidad_de_accidentes-STREAMLIT-)") 
 

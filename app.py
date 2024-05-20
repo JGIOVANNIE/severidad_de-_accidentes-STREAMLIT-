@@ -100,15 +100,7 @@ a,b,c = st.columns([0.25,0.5,0.25])
 with b:
   st.image(image="accidente.jpg", use_column_width=True)
 
-page_bg_img = '''
-<style>
-body 
-    background-color: #8D948D; 
-}
-</style>
-'''
-# Inyectar el CSS en la aplicación
-st.markdown(page_bg_img, unsafe_allow_html=True)
+
 # Descripcion del proyecto y del codigo             
 st.subheader("🧾🧾Descripción:🧾🧾")
 st.text("""Este conjunto de datos se recopiló de los departamentos de policía de la Sub-ciudad de Addis Abeba para un trabajo de investigación de maestría.

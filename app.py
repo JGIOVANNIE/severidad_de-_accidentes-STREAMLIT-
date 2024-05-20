@@ -50,8 +50,9 @@ features = ['Number_of_vehicles_involved','Number_of_casualties','Hour_of_Day','
        'Educational_level','Service_year_of_vehicle','Day_of_week','Area_accident_occured']
 # Give a title to web app using html syntax
 st.markdown("""
-            #### <p style=text-align: center Severidad en accidentes de trafico 🚧 </p>""",
-            unsafe_allow_html=True)
+    #### Pie de página
+    <p style='text-align: right;'>Este es un ejemplo de un pie de página. Puedes poner aquí la información que desees.</p>
+    """, unsafe_allow_html=True)
 
 # define a main() function to take inputs from user in form based approach
 def main():

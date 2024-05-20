@@ -66,14 +66,14 @@ def main():
               No_casualties = st.slider("Numero de casualidades:",1,8, value=0, format="%d")
               Hour = st.slider("Hora del dia:", 0, 23, value=0, format="%d")
               collision = st.selectbox("Tipo de colision:",options=options_types_collision)
-              Age_band = st.selectbox("Driver age group?:", options=options_age)
+              Age_band = st.selectbox("Grupo de edad del conductor?:", options=options_age)
               Sex = st.selectbox("Sexo del conductor:", options=options_sex)
               Education = st.selectbox("Educación del conductor:",options=options_education_level)
-              service_vehicle = st.selectbox("Service year of vehicle:", options=options_services_year)
+              service_vehicle = st.selectbox("año del ultimo servicio:", options=options_services_year)
               Day_week = st.selectbox("Dia de la semana:", options=options_day)
               Accident_area = st.selectbox("Lugar del accidente:", options=options_acc_area)
               
-              submit = st.form_submit_button("Predict")
+              submit = st.form_submit_button("Predecir")
 
 # encode using ordinal encoder and predict
        if submit:

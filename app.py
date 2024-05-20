@@ -9,8 +9,8 @@ from IPython import get_ipython
 from PIL import Image
 
 # load the encoder and model object
-model = joblib.load("rta_model_deploy3.joblib" , nmap_mode='rb')
-encoder = joblib.load("ordinal_encoder2.joblib" , nmap_mode='rb')
+model = joblib.load("rta_model_deploy3.joblib" , nmap_mode='r+')
+encoder = joblib.load("ordinal_encoder2.joblib" , nmap_mode='r+')
 
 st.set_option('deprecation.showPyplotGlobalUse', False)
 

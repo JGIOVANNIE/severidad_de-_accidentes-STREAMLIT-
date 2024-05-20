@@ -14,12 +14,12 @@ encoder = joblib.load('ordinal_encoder2.joblib')
 
 st.set_option('deprecation.showPyplotGlobalUse', False)
 
-# 1: serious injury, 2: Slight injury, 0: Fatal Injury
+# 1: lesion seria, 2: Lesion leve, 0: Lesion Fatal 
 
 st.set_page_config(page_title="Accident Severity Prediction App",
                 page_icon="🚧", layout="wide")
 
-#creating option list for dropdown menu
+# creando opciones para las listas desplegables 
 options_day = ['Sunday', "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
 options_age = ['18-30', '31-50', 'Over 51', 'Unknown', 'Under 18']
 
@@ -49,23 +49,23 @@ options_acc_area = ['Other', 'Office areas', 'Residential areas', ' Church areas
 features = ['Number_of_vehicles_involved','Number_of_casualties','Hour_of_Day','Type_of_collision','Age_band_of_driver','Sex_of_driver',
        'Educational_level','Service_year_of_vehicle','Day_of_week','Area_accident_occured']
 # Give a title to web app using html syntax
-st.markdown("Accident Severity Prediction App 🚧", unsafe_allow_html=True)
+st.markdown("Severidad en accidentes de trafico 🚧", unsafe_allow_html=True)
 
 # define a main() function to take inputs from user in form based approach
 def main():
-       with st.form("road_traffic_severity_form"):
-              st.subheader("Please enter the following inputs:")
+       with st.form("Severidad de accidentes de trafico"):
+              st.subheader("Por favor ingresa los siguientes datos :")
               
-              No_vehicles = st.slider("Number of vehicles involved:",1,7, value=0, format="%d")
-              No_casualties = st.slider("Number of casualties:",1,8, value=0, format="%d")
-              Hour = st.slider("Hour of the day:", 0, 23, value=0, format="%d")
-              collision = st.selectbox("Type of collision:",options=options_types_collision)
+              No_vehicles = st.slider("Numero de vehiculos involucrados:",1,7, value=0, format="%d")
+              No_casualties = st.slider("Numero de casualidades:",1,8, value=0, format="%d")
+              Hour = st.slider("Hora del dia:", 0, 23, value=0, format="%d")
+              collision = st.selectbox("Tipo de colision:",options=options_types_collision)
               Age_band = st.selectbox("Driver age group?:", options=options_age)
-              Sex = st.selectbox("Sex of the driver:", options=options_sex)
-              Education = st.selectbox("Education of driver:",options=options_education_level)
+              Sex = st.selectbox("Sexo del conductor:", options=options_sex)
+              Education = st.selectbox("Educación del conductor:",options=options_education_level)
               service_vehicle = st.selectbox("Service year of vehicle:", options=options_services_year)
-              Day_week = st.selectbox("Day of the week:", options=options_day)
-              Accident_area = st.selectbox("Area of accident:", options=options_acc_area)
+              Day_week = st.selectbox("Dia de la semana:", options=options_day)
+              Accident_area = st.selectbox("Lugar del accidente:", options=options_acc_area)
               
               submit = st.form_submit_button("Predict")
 
@@ -90,34 +90,69 @@ def main():
               else:
                      st.write(f"The severity prediction is slight injury")
                
-              st.write("Developed By: Avi kumar Talaviya")
-              st.markdown("""Reach out to me on: [Twitter](https://twitter.com/avikumart_) |
-              [Linkedin](https://www.linkedin.com/in/avi-kumar-talaviya-739153147/) |
-              [Kaggle](https://www.kaggle.com/avikumart) 
+              st.write("Developed By: Joshua Esquivel")
+              st.markdown("""Reach out to me on: |
+              [Linkedin](www.linkedin.com/in/jgiovannie) |
+              [GitHub](https://github.com/JGIOVANNIE) 
               """)
 
 a,b,c = st.columns([0.2,0.6,0.2])
 with b:
-  st.image("banner-picture.jpg", use_column_width=True)
+  st.image("accidente.jpeg", use_column_width=True, width=250)
 
-
-# description about the project and code files            
-st.subheader("🧾Description:")
-st.text("""This data set is collected from Addis Ababa Sub-city police departments for master's research work. 
-The data set has been prepared from manual records of road traffic accidents of the year 2017-20. 
-All the sensitive information has been excluded during data encoding and finally it has 32 features and 12316 instances of the accident.
-Then it is preprocessed and for identification of major causes of the accident by analyzing it using different machine learning classification algorithms.
+page_bg_img = '''
+<style>
+body 
+    background-color: #8D948D; 
+}
+</style>
+'''
+# Inyectar el CSS en la aplicación
+st.markdown(page_bg_img, unsafe_allow_html=True)
+# Descripcion del proyecto y del codigo             
+st.subheader("🧾🧾Descripción:🧾🧾")
+st.text("""Este conjunto de datos se recopiló de los departamentos de policía de la Sub-ciudad de Addis Abeba para un trabajo de investigación de maestría.
+       El conjunto de datos se ha preparado a partir de registros manuales de accidentes de tráfico del año 2017-20. 
+       Toda la información sensible se ha excluido durante la codificación de datos y finalmente tiene 32 características y 12316 instancias del accidente. 
+       Luego se preprocesa y se identifican las principales causas del accidente analizándolo utilizando diferentes algoritmos de clasificación de aprendizaje automático.
 """)
 
-st.markdown("Source of the dataset: [Click Here](https://www.narcis.nl/dataset/RecordID/oai%3Aeasy.dans.knaw.nl%3Aeasy-dataset%3A191591)")
+st.markdown("Fuente del dataset: [Click Here](https://www.narcis.nl/dataset/RecordID/oai%3Aeasy.dans.knaw.nl%3Aeasy-dataset%3A191591)")
 
-st.subheader("🧭 Problem Statement:")
-st.text("""The target feature is Accident_severity which is a multi-class variable. 
-The task is to classify this variable based on the other 31 features step-by-step by going through each day's task. 
-The metric for evaluation will be f1-score
+st.subheader("🧭 Problema :🧭")
+st.text("""La característica objetivo es Accident_severity, que es una variable multiclase. 
+        La tarea es clasificar esta variable en base a las otras 31 características paso a paso, realizando cada tarea diaria. 
+        La métrica para la evaluación será el f1-score.
 """)
 
-st.markdown("Please find GitHub repository link of project: [Click Here](https://github.com/JGIOVANNIE/Road-Traffic-Severity-Classification-Project)")                  
+st.markdown("Please find GitHub repository link of project: [Click He.re](https://github.com/JGIOVANNIE/Road-Traffic-Severity-Classification-Project)") 
+
+st.markdown("Siguiendo los pasos del perfil de [avikumart](https://www.kaggle.com/avikumart), se logro este proyecto con éxito") 
+
+pie_html = '''
+<style>
+footer {
+    visibility: hidden;
+}
+footer::before {
+    visibility: visible;
+    content: """"Encuentrame en: |
+              [Linkedin](www.linkedin.com/in/jgiovannie) |
+              [GitHub](https://github.com/JGIOVANNIE) 
+              [Correo](jg.esquivel@outlook.com)
+              """)";
+    display: block;
+    position: relative;
+    padding: 10px;
+    top: 2px;
+    color: white;
+    background-color: #0E1117;
+    text-align: center;
+    font-size: 12px;
+}
+</style>
+'''
+st.markdown(pie_html, unsafe_allow_html=True)                
    
 # run the main function               
 if __name__ == '__main__':

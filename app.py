@@ -48,6 +48,11 @@ options_acc_area = ['Other', 'Office areas', 'Residential areas', ' Church areas
 # features list
 features = ['Number_of_vehicles_involved','Number_of_casualties','Hour_of_Day','Type_of_collision','Age_band_of_driver','Sex_of_driver',
        'Educational_level','Service_year_of_vehicle','Day_of_week','Area_accident_occured']
+
+page_bg_css = """
+<style> .stApp { background-color: #9b948b; }</style>"""
+# Aplicar el CSS a la página
+st.markdown(page_bg_css, unsafe_allow_html=True)
 # Give a title to web app using html syntax
 st.markdown("<h1 style='text-align: center; font-weight: bold; font-size: 50px;'> 🚧 Predicción de Severidad de accidentes 🚧</h1>"
     , unsafe_allow_html=True)
@@ -103,13 +108,13 @@ with b:
 
 
 # Descripcion del proyecto y del codigo             
-st.subheader("🧾🧾Descripción:🧾🧾")
+st.markdown("<h2 style='text-align: center; font-weight: bold; font-size: 20px;'> 🧾🧾Descripción:🧾🧾 </h2>")
 st.markdown("<p style='text-align: center; font-weight: italic; font-size: 12px;'> Este conjunto de datos se recopiló de los departamentos de policía de la Sub-ciudad de Addis Abeba para un trabajo de investigación de maestría. El conjunto de datos se ha preparado a partir de registros manuales de accidentes de tráfico del año 2017-20. Toda la información sensible se ha excluido durante la codificación de datos y finalmente tiene 32 características y 12316 instancias del accidente. Luego se preprocesa y se identifican las principales causas del accidente analizándolo utilizando diferentes algoritmos de clasificación de aprendizaje automático.</p> ",
              unsafe_allow_html=True)
 
 st.markdown("Fuente del dataset: [Click Here](https://www.narcis.nl/dataset/RecordID/oai%3Aeasy.dans.knaw.nl%3Aeasy-dataset%3A191591)")
 
-st.subheader("🧭 Problema :🧭")
+st.markdown("<h2 style='text-align=center; font-weight:bold; font-size: 20px;'>🧭 Problema :🧭 </h2>")
 st.markdown("<p style='text-align: center; font-weight: italic; font-size: 12px;'> La característica objetivo es Accident_severity, que es una variable multiclase. La tarea es clasificar esta variable en base a las otras 31 características paso a paso, realizando cada tarea diaria. La métrica para la evaluación será el f1-score.</p> ",
               unsafe_allow_html=True)
 
@@ -133,7 +138,7 @@ footer::before {
     position: relative;
     padding: 10px;
     top: 2px;
-    color: white;
+    color: black;
     background-color: #0E1117;
     text-align: center;
     font-size: 12px;

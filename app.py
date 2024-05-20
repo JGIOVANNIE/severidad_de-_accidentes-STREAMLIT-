@@ -122,8 +122,7 @@ st.markdown("Encuentra mi repositorio en: [Click Here](https://github.com/JGIOVA
 
 st.markdown("Siguiendo los pasos del perfil de [avikumart](https://www.kaggle.com/avikumart), se logro este proyecto con éxito") 
 
-pie_html = """
-<style>
+pie_html = """ <style>
 footer {
     visibility: hidden;
 }
@@ -142,9 +141,7 @@ footer::before {
     background-color: #0E1117;
     text-align: center;
     font-size: 12px;
-}
-</style>
-"""
+} </style>"""
 st.markdown(pie_html, unsafe_allow_html=True)                
    
 # run the main function               

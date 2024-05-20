@@ -108,22 +108,21 @@ with b:
 
 
 # Descripcion del proyecto y del codigo             
-st.markdown("<h2 style='text-align: center; font-weight: bold; font-size: 20px;'> 🧾🧾Descripción:🧾🧾 </h2>",unsafe_allow_html=True)
-st.markdown("<p style='text-align: center; font-weight: italic; font-size: 12px;'> Este conjunto de datos se recopiló de los departamentos de policía de la Sub-ciudad de Addis Abeba para un trabajo de investigación de maestría. El conjunto de datos se ha preparado a partir de registros manuales de accidentes de tráfico del año 2017-20. Toda la información sensible se ha excluido durante la codificación de datos y finalmente tiene 32 características y 12316 instancias del accidente. Luego se preprocesa y se identifican las principales causas del accidente analizándolo utilizando diferentes algoritmos de clasificación de aprendizaje automático.</p> ",
+st.markdown("<h2 style='text-align: center; font-weight: bold; font-size: 30px;'> 🧾🧾Descripción:🧾🧾 </h2>",unsafe_allow_html=True)
+st.markdown("<p style='text-align: center; font-weight: italic; font-size: 18px;'> Este conjunto de datos se recopiló de los departamentos de policía de la Sub-ciudad de Addis Abeba para un trabajo de investigación de maestría. El conjunto de datos se ha preparado a partir de registros manuales de accidentes de tráfico del año 2017-20. Toda la información sensible se ha excluido durante la codificación de datos y finalmente tiene 32 características y 12316 instancias del accidente. Luego se preprocesa y se identifican las principales causas del accidente analizándolo utilizando diferentes algoritmos de clasificación de aprendizaje automático.</p> ",
              unsafe_allow_html=True)
 
 st.markdown("Fuente del dataset: [Click Here](https://www.narcis.nl/dataset/RecordID/oai%3Aeasy.dans.knaw.nl%3Aeasy-dataset%3A191591)")
 
-st.markdown("<h2 style='text-align=center; font-weight:bold; font-size: 20px;'>🧭 Problema :🧭 </h2>",unsafe_allow_html=True)
-st.markdown("<p style='text-align: center; font-weight: italic; font-size: 12px;'> La característica objetivo es Accident_severity, que es una variable multiclase. La tarea es clasificar esta variable en base a las otras 31 características paso a paso, realizando cada tarea diaria. La métrica para la evaluación será el f1-score.</p> ",
+st.markdown("<h2 style='text-align=center; font-weight:bold; font-size: 30px; color:black ;'>🧭 Problema :🧭 </h2>",unsafe_allow_html=True)
+st.markdown("<p style='text-align: center; font-weight: italic; font-size: 18px;color:black ;'> La característica objetivo es Accident_severity, que es una variable multiclase. La tarea es clasificar esta variable en base a las otras 31 características paso a paso, realizando cada tarea diaria. La métrica para la evaluación será el f1-score.</p> ",
               unsafe_allow_html=True)
 
-st.markdown("Encuentra mi repositorio en: [Click Here](https://github.com/JGIOVANNIE/severidad_de_accidentes-STREAMLIT-)") 
+st.markdown("black[Encuentra mi repositorio en: [Click Here](https://github.com/JGIOVANNIE/severidad_de_accidentes-STREAMLIT-)] ;") 
 
-st.markdown("Siguiendo los pasos del perfil de [avikumart](https://www.kaggle.com/avikumart), se logro este proyecto con éxito") 
+st.markdown("black[Siguiendo los pasos del perfil de [avikumart](https://www.kaggle.com/avikumart), se logro este proyecto con éxito]") 
 
-pie_html = """ 
-<style>footer {visibility: visible; content: '''Encuentrame en: | [Linkedin](www.linkedin.com/in/jgiovannie) | [GitHub](https://github.com/JGIOVANNIE)  [Correo](jg.esquivel@outlook.com) ''')"; display: block; position: relative; padding: 10px; top: 2px; color: withe; background-color: #0E1117 text-align: center; font-size: 12px;} </style>"""
+pie_html = """ <style>footer {visibility: visible; content: '''Encuentrame en: | [Linkedin](www.linkedin.com/in/jgiovannie) | [GitHub](https://github.com/JGIOVANNIE)  [Correo](jg.esquivel@outlook.com) ''')"; display: block; position: relative; padding: 10px; top: 2px; color: withe; background-color: #0E1117 text-align: center; font-size: 12px;} </style>"""
 st.markdown(pie_html, unsafe_allow_html=True)                
    
 # run the main function               

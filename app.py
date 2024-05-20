@@ -105,10 +105,8 @@ with b:
 page_bg_img = """
 <style>
 body {
-    background-color: #f0f2f6;  /* Cambia el color de fondo aquí */
+    background-color: #8D948D; 
 }
-footer {
-    visibility: hidden;
 </style>    
 """
 # Inyectar el CSS en la aplicación

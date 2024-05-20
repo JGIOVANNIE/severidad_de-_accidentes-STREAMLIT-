@@ -50,7 +50,7 @@ features = ['Number_of_vehicles_involved','Number_of_casualties','Hour_of_Day','
        'Educational_level','Service_year_of_vehicle','Day_of_week','Area_accident_occured']
 
 page_bg_css = """
-<style> .stApp { background-color: #171718; }</style>"""
+<style> .stApp { background-color: #bdbdbd; }</style>"""
 # Aplicar el CSS a la página
 st.markdown(page_bg_css, unsafe_allow_html=True)
 # Give a title to web app using html syntax
@@ -122,26 +122,8 @@ st.markdown("Encuentra mi repositorio en: [Click Here](https://github.com/JGIOVA
 
 st.markdown("Siguiendo los pasos del perfil de [avikumart](https://www.kaggle.com/avikumart), se logro este proyecto con éxito") 
 
-pie_html = """ <style>
-footer {
-    visibility: hidden;
-}
-footer::before {
-    visibility: visible;
-    content: '''Encuentrame en: |
-              [Linkedin](www.linkedin.com/in/jgiovannie) |
-              [GitHub](https://github.com/JGIOVANNIE) 
-              [Correo](jg.esquivel@outlook.com)
-              ''')";
-    display: block;
-    position: relative;
-    padding: 10px;
-    top: 2px;
-    color: withe;
-    background-color: #0E1117;
-    text-align: center;
-    font-size: 12px;
-} </style>"""
+pie_html = """ 
+<style>footer {visibility: hidden;} footer::before { visibility: visible; content: '''Encuentrame en: | [Linkedin](www.linkedin.com/in/jgiovannie) | [GitHub](https://github.com/JGIOVANNIE)  [Correo](jg.esquivel@outlook.com) ''')"; display: block; position: relative; padding: 10px; top: 2px; color: withe; background-color: #0E1117 text-align: center; font-size: 12px;} </style>"""
 st.markdown(pie_html, unsafe_allow_html=True)                
    
 # run the main function               

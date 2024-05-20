@@ -96,7 +96,7 @@ def main():
               [GitHub](https://github.com/JGIOVANNIE) 
               """)
 
-a,b,c = st.columns([0.2,0.6,0.2])
+a,b,c = st.columns([0.25,0.5,0.25])
 with b:
   st.image("accidente.jpg", use_column_width=True)
 

@@ -114,10 +114,7 @@ st.text("""<p style='text-align: center; font-weight: italic; font-size: 12px;'>
 st.markdown("Fuente del dataset: [Click Here](https://www.narcis.nl/dataset/RecordID/oai%3Aeasy.dans.knaw.nl%3Aeasy-dataset%3A191591)")
 
 st.subheader("🧭 Problema :🧭")
-st.text("""<p style='text-align: center; font-weight: italic; font-size: 12px;'> La característica objetivo es Accident_severity, que es una variable multiclase. 
-        La tarea es clasificar esta variable en base a las otras 31 características paso a paso, realizando cada tarea diaria. 
-        La métrica para la evaluación será el f1-score.
-</p> """)
+st.text("""<p style='text-align: center; font-weight: italic; font-size: 12px;'> La característica objetivo es Accident_severity, que es una variable multiclase. La tarea es clasificar esta variable en base a las otras 31 características paso a paso, realizando cada tarea diaria. La métrica para la evaluación será el f1-score.</p> """)
 
 st.markdown("Encuentra mi repositorio en: [Click Here](https://github.com/JGIOVANNIE/severidad_de_accidentes-STREAMLIT-)") 
 

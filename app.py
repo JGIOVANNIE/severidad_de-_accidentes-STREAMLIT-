@@ -98,7 +98,7 @@ def main():
 
 a,b,c = st.columns([0.25,0.5,0.25])
 with b:
-  st.image("accidente.jpg", use_column_width=True)
+  st.image(image="accidente.jpg", use_column_width=True)
 
 page_bg_img = '''
 <style>

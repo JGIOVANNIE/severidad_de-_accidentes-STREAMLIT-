@@ -98,7 +98,7 @@ def main():
 
 a,b,c = st.columns([0.25,0.5,0.25])
 with b:
-  st.image(image="accidente.jpg", use_column_width=True)
+  st.image(image="acc.jpeg", use_column_width=True)
 
 
 # Descripcion del proyecto y del codigo             

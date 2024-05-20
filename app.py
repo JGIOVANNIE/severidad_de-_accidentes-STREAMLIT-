@@ -118,9 +118,9 @@ st.markdown("<h2 style='text-align:center; font-weight:bold; font-size: 30px; co
 st.markdown("<p style='text-align: center; font-weight: italic; font-size: 18px;color:black ;'> La característica objetivo es Accident_severity, que es una variable multiclase. La tarea es clasificar esta variable en base a las otras 31 características paso a paso, realizando cada tarea diaria. La métrica para la evaluación será el f1-score.</p> ",
               unsafe_allow_html=True)
 
-st.markdown("<p style='font-size:14px; font-weight:italik;color:black'> Encuentra mi repositorio en: [Click Here](https://github.com/JGIOVANNIE/severidad_de_accidentes-STREAMLIT-) </p>",unsafe_allow_html=True) 
+st.markdown("<p style='font-size:14px; font-weight:italik;color:black'> Encuentra mi repositorio en: <a href='https://github.com/JGIOVANNIE/severidad_de_accidentes-STREAMLIT-' class='hyperlink'>Click Here</a> </p>",unsafe_allow_html=True) 
 
-st.markdown("<p style='font-size:14px; font-weight:italik;color:black'> Siguiendo los pasos del perfil de [avikumart](https://www.kaggle.com/avikumart), se logro este proyecto con éxito </p>",unsafe_allow_html=True) 
+st.markdown("<p style='font-size:14px; font-weight:italik;color:black'> Siguiendo los pasos del perfil de <a href='https://www.kaggle.com/avikumart' class='hyperlink'>avikumart</a>, se logro este proyecto con éxito </p>",unsafe_allow_html=True) 
 
 pie_html = """ <style content: '''Encuentrame en: | [Linkedin](www.linkedin.com/in/jgiovannie) | [GitHub](https://github.com/JGIOVANNIE)  [Correo](jg.esquivel@outlook.com) '''); display: block; position: relative; padding: 10px; top: 2px; color: withe; background-color: #0E1117 text-align: center; font-size: 12px;} </style>"""
 st.markdown(pie_html, unsafe_allow_html=True)                

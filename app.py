@@ -100,6 +100,18 @@ a,b,c = st.columns([0.25,0.5,0.25])
 with b:
   st.image(image="acc.jpeg", use_column_width=True)
 
+# Aplicar CSS en línea para cambiar el color de fondo de la página
+page_bg_img = """
+<style>
+body {
+    background-color: #f0f2f6;  /* Cambia el color de fondo aquí */
+}
+footer {
+    visibility: hidden;
+</style>    
+"""
+# Inyectar el CSS en la aplicación
+st.markdown(page_bg_img, unsafe_allow_html=True)
 
 # Descripcion del proyecto y del codigo             
 st.subheader("🧾🧾Descripción:🧾🧾")
@@ -117,7 +129,7 @@ st.text("""La característica objetivo es Accident_severity, que es una variable
         La métrica para la evaluación será el f1-score.
 """)
 
-st.markdown("Encuentra mi repositorio en: [Click He.re](https://github.com/JGIOVANNIE/Road-Traffic-Severity-Classification-Project)") 
+st.markdown("Encuentra mi repositorio en: [Click Here](https://github.com/JGIOVANNIE/severidad_de_accidentes-STREAMLIT-)") 
 
 st.markdown("Siguiendo los pasos del perfil de [avikumart](https://www.kaggle.com/avikumart), se logro este proyecto con éxito") 
 

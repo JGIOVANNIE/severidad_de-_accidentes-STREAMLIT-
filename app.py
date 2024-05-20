@@ -122,7 +122,7 @@ st.markdown("black[Encuentra mi repositorio en: [Click Here](https://github.com/
 
 st.markdown("black[Siguiendo los pasos del perfil de [avikumart](https://www.kaggle.com/avikumart), se logro este proyecto con éxito]") 
 
-pie_html = """ <style> footer {visibility: visible;} content: '''Encuentrame en: | [Linkedin](www.linkedin.com/in/jgiovannie) | [GitHub](https://github.com/JGIOVANNIE)  [Correo](jg.esquivel@outlook.com) ''')"; display: block; position: relative; padding: 10px; top: 2px; color: withe; background-color: #0E1117 text-align: center; font-size: 12px;} </style>"""
+pie_html = """ <style> content: '''Encuentrame en: | [Linkedin](www.linkedin.com/in/jgiovannie) | [GitHub](https://github.com/JGIOVANNIE)  [Correo](jg.esquivel@outlook.com) '''); display: block; position: relative; padding: 10px; top: 2px; color: withe; background-color: #0E1117 text-align: center; font-size: 12px;} </style>"""
 st.markdown(pie_html, unsafe_allow_html=True)                
    
 # run the main function               
